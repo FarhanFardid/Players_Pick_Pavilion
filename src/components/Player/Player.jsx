@@ -14,6 +14,7 @@ const Player = (props) => {
         <p className="mb-3 font-semibold text-sm lg:text-lg text-red-700 ">Role: {role}</p>
         <p className="mb-3 font-semibold text-sm lg:text-lg  text-blue-600 ">Price: {price}</p>
         <p className="mb-3 font-semibold text-sm lg:text-lg text-green-950 ">Country: {country}</p>
+        <button onClick={()=>{console.log(id)} } className="border-2 border-black rounded-lg py-1 px-2 font-bold text-sm bg-slate-800 text-white hover:bg-slate-950 ">Pick for Dream11</button>
     </div>
 </div>
         
