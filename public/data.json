@@ -4,7 +4,7 @@
       "id": 1,
       "player_name": "Tamim Iqbal",
       "role": "Batsman",
-      "image": "https://www.bssnews.net/assets/news_photos/2022/03/09/image-49275-1646828871.jpg",
+      "image": "https://static-files.cricket-australia.pulselive.com/headshots/440/544-camedia.png",
       "price": "$300000",
       "country": "Bangladesh"
     },
@@ -20,7 +20,8 @@
       "id": 3,
       "player_name": "Tawhid Hridoy",
       "role": "Batsman",
-      "image": "https://cricreads.com/wp-content/uploads/2023/10/Tawhid-Hridoy-696x424.jpg",
+
+      "image": "https://static-files.cricket-australia.pulselive.com/headshots/440/2972-camedia.png",
       "price": "$100000",
       "country": "Bangladesh"
     },
@@ -28,7 +29,7 @@
       "id": 4,
       "player_name": "Soumya Sarkar",
       "role": "All Rounder",
-      "image": "https://publicbiography.com/public/uploads/a1580b38d12f6221b8c9828f8d30d632.webp",
+      "image": "https://static-files.cricket-australia.pulselive.com/headshots/440/651-camedia.png",
       "price": "$120000",
       "country": "Bangladesh"
     },
@@ -36,7 +37,7 @@
       "id": 5,
       "player_name": "Tanzid Hasan Tamim",
       "role": "Batsman",
-      "image": "https://api.bdcrictime.com/players/63742.png",
+      "image": "https://static-files.cricket-australia.pulselive.com/headshots/440/2969-camedia.png",
       "price": "$80000",
       "country": "Bangladesh"
     },
@@ -44,7 +45,7 @@
       "id": 6,
       "player_name": "Anamul Haque Bijoy",
       "role": "Wicket Keeper",
-      "image": "https://www.newagebd.com/files/records/news/202311/217063_183.jpg",
+      "image": "https://static-files.cricket-australia.pulselive.com/headshots/288/1494-camedia.png",
       "price": "$150000",
       "country": "Bangladesh"
     },
@@ -68,7 +69,7 @@
       "id": 9,
       "player_name": "Mahmudullah Riyad",
       "role": "All Rounder",
-      "image": "https://static.toiimg.com/thumb/msid-76356789,width-400,resizemode-4/76356789.jpg",
+      "image": "https://static-files.cricket-australia.pulselive.com/headshots/440/547-camedia.png",
       "price": "$300000",
       "country": "Bangladesh"
     },
@@ -76,7 +77,7 @@
       "id": 10,
       "player_name": "Mushfiqur Rahim",
       "role": "Wicket Keeper",
-      "image": "https://pbs.twimg.com/profile_images/1736121707268812800/bB82W3wm_400x400.jpg",
+      "image": "https://static-files.cricket-australia.pulselive.com/headshots/288/548-camedia.png",
       "price": "$300000",
       "country": "Bangladesh"
     },
@@ -84,7 +85,7 @@
       "id": 11,
       "player_name": "Mominul Haque",
       "role": "Batsman",
-      "image": "https://www.photosport.nz/img-get2/I0000E_IRdpbXfIo/fit=1000x750/Mominul-Haque.jpg",
+      "image": "https://static-files.cricket-australia.pulselive.com/headshots/440/616-camedia.png",
       "price": "$180000",
       "country": "Bangladesh"
     },
@@ -92,7 +93,7 @@
       "id": 12,
       "player_name": "Md. Saifuddin",
       "role": "All Rounder",
-      "image": "https://api.bdcrictime.com/players/1021.png",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVtFI1GJaZI-Tcz0TVSEIJTWNS97-Qrm4iZQ&usqp=CAU",
       "price": "$100000",
       "country": "Bangladesh"
     },
@@ -100,7 +101,7 @@
       "id": 13,
       "player_name": "Mehidy Hasan Miraz",
       "role": "All Rounder",
-      "image": "https://hamariweb.com/profiles/images/profile/6023-316-13775.jpg",
+      "image": "https://www.sakshi.com/sites/default/files/special/icc/teams/2023/ban/mehidy-hasan-miraz.png",
       "price": "$200000",
       "country": "Bangladesh"
     },
@@ -108,7 +109,7 @@
       "id": 14,
       "player_name": "Taijul Islam",
       "role": "Bowler",
-      "image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/316600/316675.png",
+      "image": "https://static-files.cricket-australia.pulselive.com/headshots/440/1433-camedia.png",
       "price": "$70000",
       "country": "Bangladesh"
     },
@@ -116,7 +117,7 @@
       "id": 15,
       "player_name": "Nasum Ahmed",
       "role": "Bowler",
-      "image": "https://img6.fresherslive.com/latestnews/2023/10/nasum-ahmed-net-worth-651fd0f3c8bf29976115-900.webp",
+      "image": "https://static-files.cricket-australia.pulselive.com/headshots/440/3874-camedia.png",
       "price": "$65000",
       "country": "Bangladesh"
     },
@@ -124,7 +125,7 @@
       "id": 16,
       "player_name": "Taskin Ahmed",
       "role": "Bowler",
-      "image": "https://www.bssnews.net/assets/news_photos/2023/06/06/image-129551-1686064874.jpg",
+      "image": "https://static-files.cricket-australia.pulselive.com/headshots/288/694-camedia.png",
       "price": "$200000",
       "country": "Bangladesh"
     },
@@ -170,17 +171,17 @@
     },
     {
       "id": 22,
-      "player_name": "Rishad Hossain",
-      "role": "Bowler",
-      "image": "https://api.bdcrictime.com/rishad--19_12_2023.jpg",
-      "price": "$50000",
+      "player_name": "Naim Sheikh",
+      "role": "Batsman",
+      "image": "https://static-files.cricket-australia.pulselive.com/headshots/440/3512-camedia.png",
+      "price": "$70000",
       "country": "Bangladesh"
     },
     {
       "id": 23,
       "player_name": "Afif Hossain",
       "role": "All Rounder",
-      "image": "https://www.bssnews.net/assets/news_photos/2021/08/31/image-14574-1630413525.jpg",
+      "image": "https://static-files.cricket-australia.pulselive.com/headshots/288/1349-camedia.png",
       "price": "$90000",
       "country": "Bangladesh"
     },
@@ -197,7 +198,7 @@
       "id": 25,
       "player_name": "Sheikh Mahedi",
       "role": "All Rounder",
-      "image": "https://api.bdcrictime.com/mahedi-hasan-17_03_2022.jpg",
+      "image": "https://static-files.cricket-australia.pulselive.com/headshots/440/551-camedia.png",
       "price": "$80000",
       "country": "Bangladesh"
     }
