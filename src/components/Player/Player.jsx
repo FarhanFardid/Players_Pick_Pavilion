@@ -1,7 +1,7 @@
 
 
-const Player = (props) => {
-    const player = props.player; 
+const Player = ({player}) => {
+   
     const {id,player_name,image,role,price,country} = player;
 
     return (
