@@ -5,7 +5,7 @@ const Navigation = () => {
     
     return (
   
-<nav className="bg-gray-400  fixed w-full z-20 top-0 start-0  ">
+<nav className="bg-gray-400 w-full z-20 top-0 start-0  ">
   
   <div  className="flex items-center justify-around lg:p-4 p-1">
       <img src={logo} className="h-10 w-10 lg:h-24 lg:w-24 rounded-full m-1 lg:m-3" alt="Player Pick Logo"/>
