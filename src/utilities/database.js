@@ -1,7 +1,7 @@
 function addToDB(id) {
   let newTeam;
   const existTeam = savedToDB();
-  console.log(existTeam);
+//   console.log(existTeam);
   if (existTeam.length == 0) {
     newTeam = [id];
   } else {
@@ -15,13 +15,13 @@ function addToDB(id) {
     }
   }
 
-  console.log(newTeam);
+//   console.log(newTeam);
   const newTeamStringified = JSON.stringify(newTeam);
   localStorage.setItem("Team", newTeamStringified);
 }
 function removeFromDB(id) {
   let remainingPlayers;
-  console.log("player removed ", id);
+//   console.log("player removed ", id);
   const existTeam = savedToDB();
   remainingPlayers = [...existTeam];
   if (existTeam.length == 0) {
@@ -31,27 +31,22 @@ function removeFromDB(id) {
   } else {
     remainingPlayers = existTeam.filter((p) => p !== id);
   }
-  console.log(remainingPlayers);
+//   console.log(remainingPlayers);
   const remainingPlayerStringifed = JSON.stringify(remainingPlayers);
   localStorage.setItem("Team", remainingPlayerStringifed);
 }
 function savedToDB() {
   let Team = [];
   const savedTeam = localStorage.getItem("Team");
-  console.log(savedTeam);
+//   console.log(savedTeam);
   if (savedTeam) {
     Team = JSON.parse(savedTeam);
   }
-  console.log(Team);
+//   console.log(Team);
   return Team;
 }
 
-function displayTeam() {
-  const savedTeam = savedToDB();
-  console.log(savedTeam);
-//   console.log(typeof(savedTeam));
-  return savedTeam;
-}
+
 savedToDB();
 
-export { addToDB, savedToDB, displayTeam, removeFromDB };
+export { addToDB, savedToDB, removeFromDB };

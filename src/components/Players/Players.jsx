@@ -1,13 +1,13 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import Player from "../Player/Player";
-import { addToDB, removeFromDB} from "../../utilities/database";
+import { addToDB, removeFromDB, savedToDB} from "../../utilities/database";
 import DisplayTeam from "../DisplayTeam/DisplayTeam";
 
 const Players = () => {
-
+const savedTeam = savedToDB();
     const [players, setPlayers] = useState([]);
-    const[team,setTeam] = useState([]);
+    const[team,setTeam] = useState(savedTeam);
     useEffect(()=>{
         fetch("data.json")
         .then(res => res.json())
@@ -15,6 +15,7 @@ const Players = () => {
     },[])
 
     const addPlayer = (id) =>{
+
         // console.log(id);
         if(!team.includes(id)){
           let newTeam =[...team,id];
@@ -24,7 +25,7 @@ const Players = () => {
         
     } 
     const removePlayer=(id)=>{
-        console.log(id);
+        // console.log(id);
         if(team.includes(id)){
             let modifiedTeam = team.filter(p => p !== id);
             setTeam(modifiedTeam);
