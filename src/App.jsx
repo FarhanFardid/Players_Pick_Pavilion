@@ -8,7 +8,7 @@ function App() {
     <>
       <Navigation></Navigation>
       <Players></Players>
-      {/* <DisplayTeam></DisplayTeam> */}
+      
     </>
   );
 }

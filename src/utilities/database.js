@@ -46,7 +46,10 @@ function savedToDB() {
   return Team;
 }
 
+function deleteDB (){
+    localStorage.removeItem("Team");
+}
 
 savedToDB();
 
-export { addToDB, savedToDB, removeFromDB };
+export { addToDB, savedToDB, removeFromDB,deleteDB };
