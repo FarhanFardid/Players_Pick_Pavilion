@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import Player from "../Player/Player";
-import { addToDB, savedToDB } from "../../utilities/database";
+import { addToDB} from "../../utilities/database";
 
 const Players = () => {
 
@@ -12,11 +12,10 @@ const Players = () => {
         .then (data => setPlayers(data.players))
     },[])
 
-    const playerClicked = (play) =>{
-        console.log(play);
-
-        addToDB(play);
-        savedToDB();
+    const playerClicked = (id) =>{
+        console.log(id);
+        addToDB(id);
+      
     } 
     return (
         <div className="bg-slate-500">
