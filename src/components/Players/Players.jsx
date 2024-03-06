@@ -2,10 +2,12 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Player from "../Player/Player";
 import { addToDB, removeFromDB} from "../../utilities/database";
+import DisplayTeam from "../DisplayTeam/DisplayTeam";
 
 const Players = () => {
 
     const [players, setPlayers] = useState([]);
+    const[team,setTeam] = useState([]);
     useEffect(()=>{
         fetch("data.json")
         .then(res => res.json())
@@ -14,11 +16,21 @@ const Players = () => {
 
     const addPlayer = (id) =>{
         // console.log(id);
+        if(!team.includes(id)){
+          let newTeam =[...team,id];
+          setTeam(newTeam);
+        }
         addToDB(id);
+        
     } 
     const removePlayer=(id)=>{
         console.log(id);
+        if(team.includes(id)){
+            let modifiedTeam = team.filter(p => p !== id);
+            setTeam(modifiedTeam);
+        }
         removeFromDB(id);
+       
     }
     return (
         <div className="bg-slate-500">
@@ -34,6 +46,7 @@ const Players = () => {
                           > </Player>)
                 }
             </div>
+            <DisplayTeam team={team}></DisplayTeam>
         </div>
     );
 };

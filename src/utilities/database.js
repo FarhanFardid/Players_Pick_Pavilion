@@ -20,25 +20,20 @@ function addToDB(id) {
   localStorage.setItem("Team", newTeamStringified);
 }
 function removeFromDB(id) {
-    let remainingPlayers;
+  let remainingPlayers;
   console.log("player removed ", id);
   const existTeam = savedToDB();
   remainingPlayers = [...existTeam];
-  if(existTeam.length == 0){
-    alert("No player is Added to Dream 11 Fantasy Team")
-   
+  if (existTeam.length == 0) {
+    alert("No player is Added to Dream 11 Fantasy Team");
+  } else if (!existTeam.includes(id)) {
+    alert("Players is not in the Fantasy Team");
+  } else {
+    remainingPlayers = existTeam.filter((p) => p !== id);
   }
-  else if( !existTeam.includes(id) ){
-    alert("Players is not in the Fantasy Team")
-    
-  }
-  else{
-          remainingPlayers = existTeam.filter(p => p !== id)
-  }
-    console.log(remainingPlayers);
-    const remainingPlayerStringifed = JSON.stringify(remainingPlayers);
-    localStorage.setItem("Team", remainingPlayerStringifed);
-  
+  console.log(remainingPlayers);
+  const remainingPlayerStringifed = JSON.stringify(remainingPlayers);
+  localStorage.setItem("Team", remainingPlayerStringifed);
 }
 function savedToDB() {
   let Team = [];
@@ -54,7 +49,9 @@ function savedToDB() {
 function displayTeam() {
   const savedTeam = savedToDB();
   console.log(savedTeam);
+//   console.log(typeof(savedTeam));
   return savedTeam;
 }
 savedToDB();
+
 export { addToDB, savedToDB, displayTeam, removeFromDB };

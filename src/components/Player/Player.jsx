@@ -2,7 +2,7 @@
 
 const Player = ({player,addPlayer,removePlayer}) => {
    
-    const {id,player_name,image,role,price,country} = player;
+    const { id ,player_name, image, role, price, country} = player;
     // const playerAdd = addPlayer;
 
     return (
