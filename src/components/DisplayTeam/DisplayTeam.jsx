@@ -30,16 +30,18 @@ console.log(detailsData)
       <h3 className="text-xl lg:text-4xl font-bold text-blue-800 p-2 lg:p-4  text-center">
         Players Added To the Dream 11 Fantasy Team
       </h3>
-      <p className="text-red-600 text-2xl text-center p-4 font-bold">
+      <p className="text-red-600 text-sm lg:text-2xl text-center p-4 font-bold">
       {team.length}  Players Already Picked Up for the Team
       </p>
       {/* <p className="text-red-600 text-2xl text-center p-4">
         Players in the Data: {data.length}
       </p> */}
+      <div className="grid   grid-cols-3 lg:grid-cols-4 gap-2 p-1 lg:p-3">
       {
       detailsData.map(player => <Team key={player.id} player={player}> </Team>)
     
-      }
+}
+</div>
     </div>
   );
 };

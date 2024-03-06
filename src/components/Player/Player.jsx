@@ -15,8 +15,8 @@ const Player = ({player,addPlayer,removePlayer}) => {
         <p className="mb-3 font-semibold text-sm lg:text-lg text-red-700 ">Role: {role}</p>
         <p className="mb-3 font-semibold text-sm lg:text-lg  text-blue-600 ">Price: {price}</p>
         <p className="mb-3 font-semibold text-sm lg:text-lg text-green-950 ">Country: {country}</p>
-        <button onClick={()=>{addPlayer(id)} } className="border-2 border-black rounded-lg py-1 px-2 font-bold text-sm bg-green-800 text-white hover:bg-green-950 my-1 ">Pick Player</button>
-        <button onClick={()=>{removePlayer(id)} } className="border-2 border-black rounded-lg py-1 px-2 font-bold text-sm bg-red-600 text-white hover:bg-red-800 ">Drop Player</button>
+        <button onClick={()=>{addPlayer(id)} } className="border-2 border-black rounded-lg py-1 px-1  lg:px-2 font-bold text-sm bg-green-800 text-white hover:bg-green-950 my-1 ">Pick Player</button>
+        <button onClick={()=>{removePlayer(id)} } className="border-2 border-black rounded-lg py-1 px-1 lg:px-2 font-bold text-sm bg-red-600 text-white hover:bg-red-800 ">Drop Player</button>
     </div>
 </div>
         
