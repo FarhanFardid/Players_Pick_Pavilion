@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import Player from "../Player/Player";
-import { addToDB} from "../../utilities/database";
+import { addToDB, removeFromDB} from "../../utilities/database";
 
 const Players = () => {
 
@@ -12,11 +12,14 @@ const Players = () => {
         .then (data => setPlayers(data.players))
     },[])
 
-    const playerClicked = (id) =>{
-        console.log(id);
+    const addPlayer = (id) =>{
+        // console.log(id);
         addToDB(id);
-      
     } 
+    const removePlayer=(id)=>{
+        console.log(id);
+        removeFromDB(id);
+    }
     return (
         <div className="bg-slate-500">
             <h3 className="text-xl lg:text-4xl font-bold text-blue-800 p-2 lg:p-4  text-center">Players Profile</h3>
@@ -26,7 +29,8 @@ const Players = () => {
                     players.map(player => <Player
                          key={player.id}
                           player={player}
-                          playerClicked = {playerClicked}
+                          addPlayer = {addPlayer}
+                          removePlayer={removePlayer}
                           > </Player>)
                 }
             </div>

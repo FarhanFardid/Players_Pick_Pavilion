@@ -1,9 +1,9 @@
 
 
-const Player = ({player,playerClicked}) => {
+const Player = ({player,addPlayer,removePlayer}) => {
    
     const {id,player_name,image,role,price,country} = player;
-    // const playerClick = playerClicked;
+    // const playerAdd = addPlayer;
 
     return (
        
@@ -15,7 +15,8 @@ const Player = ({player,playerClicked}) => {
         <p className="mb-3 font-semibold text-sm lg:text-lg text-red-700 ">Role: {role}</p>
         <p className="mb-3 font-semibold text-sm lg:text-lg  text-blue-600 ">Price: {price}</p>
         <p className="mb-3 font-semibold text-sm lg:text-lg text-green-950 ">Country: {country}</p>
-        <button onClick={()=>{playerClicked(id)} } className="border-2 border-black rounded-lg py-1 px-2 font-bold text-sm bg-slate-800 text-white hover:bg-slate-950 ">Pick for Dream11</button>
+        <button onClick={()=>{addPlayer(id)} } className="border-2 border-black rounded-lg py-1 px-2 font-bold text-sm bg-slate-800 text-white hover:bg-slate-950 my-1 ">Pick Player</button>
+        <button onClick={()=>{removePlayer(id)} } className="border-2 border-black rounded-lg py-1 px-2 font-bold text-sm bg-red-600 text-white hover:bg-red-800 ">Remove Player</button>
     </div>
 </div>
         
