@@ -1,7 +1,12 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import Player from "../Player/Player";
-import { addToDB, deleteDB, removeFromDB, savedToDB } from "../../utilities/database";
+import {
+  addToDB,
+  deleteDB,
+  removeFromDB,
+  savedToDB,
+} from "../../utilities/database";
 import DisplayTeam from "../DisplayTeam/DisplayTeam";
 
 const Players = () => {
@@ -30,10 +35,10 @@ const Players = () => {
     }
     removeFromDB(id);
   };
-  const deleteTeam =() =>{
+  const deleteTeam = () => {
     deleteDB();
-   setTeam([]);
-}
+    setTeam([]);
+  };
   return (
     <div className="bg-slate-500">
       <h3 className="text-xl lg:text-4xl font-bold text-blue-800 p-2 lg:p-4  text-center">
