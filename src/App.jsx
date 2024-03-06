@@ -1,5 +1,6 @@
 
 import './App.css'
+import DisplayTeam from './components/DisplayTeam/DisplayTeam'
 import Navigation from './components/Navigation/Navigation'
 import Players from './components/Players/Players'
 
@@ -9,6 +10,7 @@ function App() {
     <>
       <Navigation></Navigation>
       <Players></Players>
+      <DisplayTeam></DisplayTeam>
     
       
     </>
