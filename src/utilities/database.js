@@ -4,7 +4,12 @@ function addToDB(id) {
 //   console.log(existTeam);
   if (existTeam.length == 0) {
     newTeam = [id];
-  } else {
+  } 
+  else if(existTeam.length >= 15){
+    alert("You have Already Completed the Full Squad. You have to drop players from the Squad to add new players to the Squad");
+    return;
+  } 
+  else {
     for (let n of existTeam) {
       if (n == id) {
         alert("Player is already in the Dream 11 Fantasy Team");
@@ -25,9 +30,9 @@ function removeFromDB(id) {
   const existTeam = savedToDB();
   remainingPlayers = [...existTeam];
   if (existTeam.length == 0) {
-    alert("No player is Added to Dream 11 Fantasy Team");
+    alert("No player is Added to Dream 11 Fantasy Team Yet");
   } else if (!existTeam.includes(id)) {
-    alert("Players is not in the Fantasy Team");
+    alert("This Player is not in the Fantasy Team");
   } else {
     remainingPlayers = existTeam.filter((p) => p !== id);
   }

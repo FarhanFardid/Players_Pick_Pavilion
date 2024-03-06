@@ -39,7 +39,7 @@ const DisplayTeam = (props) => {
   return (
     <div className="bg-purple-400 p-4">
       <h3 className="text-xl lg:text-4xl font-bold text-blue-800 p-2 lg:p-4  text-center">
-        Players Added To the Dream 11 Fantasy Team
+        Players Added To the Squad for Dream 11 Fantasy Team
       </h3>
       <p className="text-red-600 text-sm lg:text-2xl text-center p-4 font-bold">
       {team.length}  Players Already Picked Up for the Team
