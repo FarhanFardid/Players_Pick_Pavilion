@@ -16,3 +16,5 @@ iv. No Point System: Unlike traditional fantasy sports platforms, Players Pick P
 v. Team Reset: Drop the entire team to create a new squad of your choice.
 
 vi. User-Friendly Interface: Simple and intuitive interface for easy navigation and squad management.
+
+
