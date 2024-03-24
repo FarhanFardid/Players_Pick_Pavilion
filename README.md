@@ -1,9 +1,9 @@
 # Players Pick Pavilion
 
 
-Welcome to Players Pick Pavilion, your go-to platform for creating your fantasy sports squad with your favorite players. Players Pick Pavilion allows users to select players of their choice from a list of available players and create their dream team. Whether you're a sports enthusiast or just looking for some fun, Players Pick Pavilion is here to make your fantasy team dreams come true!
+## Welcome to Players Pick Pavilion, your go-to platform for creating your fantasy sports squad with your favorite players. Players Pick Pavilion allows users to select players of their choice from a list of available players and create their dream team. Whether you're a sports enthusiast or just looking for some fun, Players Pick Pavilion is here to make your fantasy team dreams come true!
 
-Features:
+### Features:
 
 i. Player Selection: Choose players from a list of available players to create your fantasy squad.
 
