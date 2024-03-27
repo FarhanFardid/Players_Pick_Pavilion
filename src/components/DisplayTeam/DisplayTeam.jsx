@@ -37,17 +37,17 @@ const DisplayTeam = (props) => {
   // console.log(detailsData)
 
   return (
-    <div className="bg-purple-400 p-4">
-      <h3 className="text-xl lg:text-4xl font-bold text-blue-800 p-2 lg:p-4  text-center">
+    <div className="bg-purple-400 p-2">
+      <h3 className="text-xl lg:text-3xl font-bold text-blue-800 p-2 lg:p-4  text-center">
         Players Added To the Squad for Dream 11 Fantasy Team
       </h3>
-      <p className="text-red-600 text-sm lg:text-2xl text-center p-4 font-bold">
+      <p className="text-red-600 text-sm lg:text-xl text-center p-4 font-bold">
         {team.length} Players Already Picked Up for the Team
       </p>
       {/* <p className="text-red-600 text-sm lg:text-2xl text-center p-4 font-bold">
         Players in the Data: {data.length}
       </p> */}
-      <div className="grid   grid-cols-3 lg:grid-cols-4 gap-2 p-1 lg:p-3">
+      <div className="grid   grid-cols lg:grid-cols-2 gap-2 p-1 lg:p-3">
         {!loading &&
           detailsData.map((player) => (
             <Team key={player.id} player={player}>

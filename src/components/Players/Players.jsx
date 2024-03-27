@@ -40,14 +40,14 @@ const Players = () => {
     setTeam([]);
   };
   return (
-    <div className="bg-slate-500">
-      <h3 className="text-xl lg:text-4xl font-bold text-blue-800 p-2 lg:p-4  text-center">
+    <div className="bg-slate-500 grid grid-cols-8">
+      <div className="col-span-5">  <h3 className="text-xl lg:text-4xl font-bold text-blue-800 p-2 lg:p-4  text-center">
         Players Profile
       </h3>
       <p className="text-center text-sm lg:text-2xl font-semibold my-1 lg:my-5 text-white">
         Total Number of Available Players: {players.length}
       </p>
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-2">
+      <div className="grid grid-cols-2  gap-2">
         {players.map((player) => (
           <Player
             key={player.id}
@@ -58,8 +58,10 @@ const Players = () => {
             {" "}
           </Player>
         ))}
-      </div>
-      <DisplayTeam team={team} deleteTeam={deleteTeam}></DisplayTeam>
+      </div></div>
+    
+    <div className="col-span-3">  <DisplayTeam team={team} deleteTeam={deleteTeam}></DisplayTeam></div>
+    
     </div>
   );
 };
